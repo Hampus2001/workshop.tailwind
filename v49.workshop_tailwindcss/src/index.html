@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body style="background-image: url(./images/background.jpg)">
+    <div
+      id="header"
+      class="flex justify-between items-start panelTop ml-8 mr-7 mt-7"
+    >
+      <div id="logo" class="flex w-auto h-6 align-center items-center">
+        <img class="h-4 mr-2" src="./images/tailwindcss.png" />
+        <h1 class="text-xl font-semibold">tailwindcss</h1>
+      </div>
+      <div
+        id="navDesktop"
+        class="hidden md:flex gap-5 text-sm font-semibold align-center items-center"
+      >
+        <a class="" href="">Docs</a>
+        <a href="">Components</a>
+        <a href="">Blog</a>
+        <a href="">Showcase</a>
+        <div class="opacity-20 text-xl">|</div>
+        <img class="h-5" src="./images/lightMode.png" />
+        <img class="h-5 opacity-50" src="./images/github.png" />
+      </div>
+
+      <div class="flex flex-row gap-2 md:hidden">
+        <button id="searchOnNav">
+          <img class="h-6 opacity-50" src="./images/search.png" />
+        </button>
+        <buttton id="showNavMobile" class="md:hidden">
+          <img class="h-6 cursor-pointer" src="./images/hamburger.png" />
+        </buttton>
+      </div>
+
+      <div id="displayNav" class="hidden flex-col items-center">
+        <div
+          id="containerNavMobile"
+          class="z-10 md:hidden bg-white rounded-xl w-72 h-80 flex flex-col items-center absolute right-5 top-5"
+        >
+          <div
+            id="navMobile"
+            class="flex flex-col bg-white pt-5 rounded-t-xl w-60 h-60 font-semibold gap-5 md:hidden border-gray-200 border-solid border-b-2"
+          >
+            <div class="topOfNav flex flex-row justify-between mr-2">
+              <a href="">Docs</a>
+              <p id="closeNav" class="opacity-40 cursor-pointer">X</p>
+            </div>
+            <a href="">Components</a>
+            <a href="">Blog</a>
+            <a href="">Showcase</a>
+            <a href="">Github</a>
+          </div>
+          <div class="flex flex-row justify-between items-center w-60 pt-5">
+            <p>Switch theme</p>
+            <div
+              class="flex flex-row justify-between p-1 px-2 border-gray-200 border-solid border-2 rounded-md cursor-pointer items-center gap-2"
+            >
+              <img class="h-5" src="./images/lightMode.png" />
+              <p>Light</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero" class="z-0 flex flex-col box-border items-center mt-28">
+      <h1
+        class="max-w-5xl text-4xl md:text-6xl tracking-tight text-slate-900 font-bold text-center py-2"
+      >
+        Rapidly build modern websites without ever leaving your HTML.
+      </h1>
+
+      <h3 id="h3" class="max-w-2xl mt-6 text-center font-semibold opacity-70">
+        A utility-first CSS framework packed with classes like
+        <code class="text-sky-500 font-semibold">flex</code>
+        ,
+        <code class="text-sky-500 font-semibold">pt-4</code>
+        ,
+        <code class="text-sky-500 font-semibold">text-center</code>
+        and
+        <code class="text-sky-500 font-semibold">rotate-90</code>
+        that can be composed to build any design, directly in your markup.
+      </h3>
+
+      <div
+        class="flex flex-row h-12 text-center justify-center items-center gap-10 mt-10 cursor-pointer"
+      >
+        <button
+          class="text-sm text-white bg-slate-900 w-28 rounded-md font-bold h-12"
+        >
+          Get started
+        </button>
+        <div
+          class="flex flex-row gap-12 text-center items-center justify-between h-12 w-64 box-border bg-white border-gray-200 border-solid border-2 p-3 rounded-lg"
+        >
+          <div class="flex flex-row opacity-30 text-sm">
+            <img class="h-6" src="./images/search.png" />
+            <button>Quick search...</button>
+          </div>
+          <p class="opacity-30">ctrl-K</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
